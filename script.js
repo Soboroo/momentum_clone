@@ -1,16 +1,7 @@
-const player = {
-  name: "bruh",
-  health: 100,
-  weapon: {
-    name: "sword",
-    damage: 10,
-  },
-};
+function sayHello(name = "World") {
+  console.log("Hello " + name);
+}
 
-console.log(player.name);
-console.log(player.health);
-console.log(player.weapon.name);
-console.log(player.weapon.damage);
-
-player.lastname = "hamburger";
-console.log(player);
+sayHello();
+sayHello("John");
+sayHello("Hamburger");
