@@ -1,10 +1,9 @@
-const calculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-};
+const age = parseInt(prompt("How old are you?")); // return type is number!!!
 
-console.log(calculator.plus(1, 2));
+if (isNaN(age)) {
+  alert("You entered incorrect data!");
+} else if (age >= 18) {
+  alert("You are adult!");
+} else {
+  alert("You are not adult!");
+}
